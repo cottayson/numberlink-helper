@@ -1,0 +1,25 @@
+{
+  "plugins": [
+    "plugins/markdown"
+  ],
+  "sourceType": "module",
+  "source": {
+    "include": ["src/js"],
+    "exclude": ["src/js/main.js"],
+    "includePattern": ".+\\.js?$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false,
+    "default": {
+        "outputSourceFiles": false
+    }
+  },
+  "opts": {
+    "template": "templates/default",
+    "encoding": "utf8",
+    "destination": "./out/",
+    "recurse": true
+  }
+}
